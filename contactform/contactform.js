@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
       data: str,
       success: function(msg) {
          alert(msg);
-        if (msg == 'OK,thank you.I will be in touch!') {
+        if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
@@ -112,7 +112,7 @@ jQuery(document).ready(function($) {
 
       }
     });
-    return false;
+    return true;
   });
 
 });
