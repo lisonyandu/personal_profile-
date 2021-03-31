@@ -99,8 +99,8 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-        // alert(msg);
-        if (msg == 'OK') {
+         alert(msg);
+        if (msg == 'OK,thank you.I will be in touch!') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
